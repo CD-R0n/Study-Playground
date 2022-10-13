@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formulier</title>
+</head>
+<body>
+<form method="post" action="bewaarInformatie.php">
+<table width="600" border="0">
+<tbody>
+<tr>
+<td width="200"><b>Uw adres</b></td>
+<td width="400"><input type="text" name="adres" placeholder="Straatnaam en huisnummer"></td>
+</tr>
+<tr>
+<td><b>Uw leeftijd</b></td>
+<td><input type="number" name="leeftijd" min="1" max="100"></td>
+</tr>
+<tr>
+<td><b>Uw wachtwoord</b></td>
+<td><input type="password" name="wachtwoord"></td>
+</tr>
+<tr>
+<td><b>Uw e-mailadres</b></td>
+<td><input type="email" name="emailadres"></td>
+</tr>
+<tr>
+<td><b>Uw webpagina</b></td>
+<td><input type="url" name="webadres"></td>
+</tr>
+<tr>
+<td><b>Uw telefoonnummer</b></td>
+<td><input type="tel" name="telefoonnummer"></td>
+</tr>
+<tr>
+    <tr><td><b>Uw geboortedatum</b>
+    </td><td><input type="date" name="datum" max="2080-12-31">
+    </td></tr>
+    <tr>
+        <td><b>Uw geslacht</b></td>
+        <td>
+        <input type="radio" name="geslacht" value="man" checked>Man
+        <input type="radio" name="geslacht" value="vrouw">Vrouw
+        <input type="radio" name="geslacht" value="anders">Anders
+        </td>
+        <tr>
+        <tr>
+        <td><b> Selecteer minimaal een van de aangeboden onderwerpen </b></td>
+        <td>
+        <input type="checkbox" name="onderwerpen" value="ja">Sport
+        <input type="checkbox" name="onderwerpen" value="ja">Gezondheid
+        <input type="checkbox" name="onderwerpen" value="ja">Kunst
+        <input type="checkbox" name="onderwerpen" value="ja">Politiek
+        <input type="checkbox" name="onderwerpen" value="ja">Weer
+        </td>
+        </tr>
+        <tr>
+            <td><b>Selecteer uw bestand</b></td>
+            <td><input type="file" name="document"></td></tr>
+            <td><b>Selecteer uw land</b></td>
+            <td><select name="land">
+            <option value="nl">Nederland</option>
+            <option value="be" selected>België</option>
+            <option value="de">Duitsland</option>
+            <option value="fr">Frankrijk</option>
+            </select></td></tr>
+            <td><b>Schrijf uw boodschap</b></td><br>
+            <td><textarea name ="bericht" maxlength ="1500">
+            </textarea></td></tr>
+<td>&nbsp;</td>
+<td><button type="submit" name="verzendknop">
+<strong>Verzend</strong></button></td>
+</tr>
+</tbody>
+</table>
+</form>
+</body>
+</html>

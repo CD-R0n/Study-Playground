@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aanmeldingsformulier</title>
+</head>
+<body>
+    <h1>Inschrijving Cursist</h1>
+    <form method="post" action="https://formspree.io/f/xzbwvygj">
+        <fieldset>
+            <legend>Persoonlijke gegevens</legend>
+            <table>
+                <thead></thead>
+                <tbody>
+                    <tr>
+                        <td><label for="voornaam">Voornaam:</label></td>
+                        <td><input type="text" id="voornaam" name="voornaam" maxlength="100" placeholder="Voornaam" required></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><label for="achternaam">Achternaam:</label></td>
+                        <td><input type="text" id="achternaam" name="achternaam" minlength="2" maxlength="100" placeholder="Achternaam" required></td>    
+                        <td></td>      
+                        <td></td>              
+                    </tr>
+                    <tr>
+                        <td>Aanhef:</td>
+                        <td>
+                            <input type="radio" id="anders" name="aanhef" value="" checked>
+                            <label for="anders">Anders</label>                         
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="radio" id="mijnheer" name="aanhef" value="mijnheer">
+                            <label for="mijnheer">Dhr.</label>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="radio" id="mevrouw" name="aanhef" value="mevrouw">
+                            <label for="mevrouw">Mevr.</label>  
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><label for="straat">Straat:</label></td>
+                        <td><input type="text" id="straat" name="straat" minlength="2" maxlength="100" placeholder="Straatnaam" required></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><label for="huisnummer">Huisnummer:</label></td>
+                        <td>
+                            <input type="number" id="huisnummer" min="1" required max="9999">
+                            <label for="toevoeging">Toevoeging huisnummer:</label>
+                            <input type="text" id="toevoeging" name="toevoeging" maxlength="100" size="4">
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><label for="postcode">Postcode:</label></td>
+                        <td><input type="text" id="postcode" name="postcode" minlength="6" maxlength="100" placeholder="1234AB" size="7" required></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><label for="woonplaats">Woonplaats:</label></td>
+                        <td><input type="text" id="woonplaats" name="woonplaats" minlength="2" maxlength="100" placeholder="Woonplaats" required></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><label for="profielfoto">Kies een profielfoto:</label></td>
+                        <td><input type="file" id="profielfoto" name="profielfoto" accept="image/*" capture="user"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+                <tfoot></tfoot>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Inschrijvingsinformatie</legend>
+            <table>
+                <thead></thead>
+                <tbody>
+                    <tr>
+                        <td><label for="opleiding">Hoogst genoten opleiding:</label></td>
+                        <td>
+                            <select name="opleiding" id="opleiding">
+                                <option value="Basisonderwijs">Basisonderwijs</option>
+                                <option value="Vmbo, havo, vwo-onderbouw, mbo1">Vmbo, havo, vwo-onderbouw, mbo1</option>
+                                <option value="Havo, vwo, mbo2-4">Havo, vwo, mbo2-4</option>
+                                <option value="Hbo-, wo-bachelor">Hbo-, wo-bachelor</option>
+                                <option value="Hbo-, wo-master, doctor">Hobo, wo-master, doctor</option>
+                            </select>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Gewenste cursus:</td>
+                        <td>
+                            <input type="checkbox" id="front-end_developer" name="cursus" value="front-end_developer">
+                            <label for="front-end_developer">Front-end developer</label>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="checkbox" id="back-end_developer" name="cursus" value="back-end_developer">
+                            <label for="back-end_developer">Back-end developer</label>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="checkbox" id="agile_scrum" name="cursus" value="agile_scrum">
+                            <label for="agile_scrum">Agile Scrum</label>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="startdatum">Gewenste startdatum:</label>
+                        </td>
+                        <td><input type="date" id="startdatum" name="startdatum" min="2022-10-14"></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+                <tfoot></tfoot>
+            </table>
+        </fieldset>
+        <br>
+        <input type="submit" value="Verstuur aanmelding">
+    </form>
+</body>
+</html>
