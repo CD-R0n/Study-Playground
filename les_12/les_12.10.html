@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Curistenregister</title>
+<style type="text/css">
+body{
+background-color: red;
+color: green;
+}
+</style>
+</head>
+<body>
+<h1 style="color: purple">Cursistenregister</h1>
+<br>
+<div style="width: 500px; min-height: 250px; margin: 0 auto; background-color: yellow; color: blue;">
+<p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia.</p>
+</div>
+<br>
+<table style="width:80%; background-color: grey">
+<tr style="background-color: lightblue;">
+<th>Voornaam</th>
+<th>Achternaam</th>
+<th>Leeftijd</th>
+</tr>
+<tr>
+<td>Jonas</td>
+<td>Bril</td>
+<td>60 jaar</td>
+</tr>
+<tr>
+<td>Eva</td>
+<td>Jacobs</td>
+<td>24 jaar</td>
+</tr>
+<tr>
+<td>Joost</td>
+<td>Deurman</td>
+<td>38 jaar</td>
+</tr>
+</table>
+</body>
+</html>
