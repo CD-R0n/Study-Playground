@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formulier met CSS</title>
+<style type="text/css">
+body{
+font-family: Verdana, sans-serif; font-size: 18px; color: green;
+}
+input[type="text"], input[type="email"], textarea, select, button{
+    display: block;margin: 15px 0px;
+    width: 400px;box-sizing: border-box;
+    border-radius: 4px; box-shadow: inset 2px 2px 5px lightgreen;
+}
+textarea{height: 100px;padding: 5px 4px;}
+button:active{background-color: darkgreen;color: white;border-radius: 4px; box-shadow: inset 2px 2px 5px blue;}
+</style>
+</head>
+<body>
+<form> Contactformulier
+<input type="text" placeholder="Uw naam" />
+<input type="email" placeholder="Uw e-mailadres" />
+<textarea placeholder="Uw boodschap"> </textarea>
+<select>
+<option>Afdeling</option>
+<option>Receptie</option>
+<option>Administratie</option>
+<option>Marketing</option>
+<option>Algemeen</option>
+</select>
+<button>Verzend</button>
+</form>
+</body>
+</html>

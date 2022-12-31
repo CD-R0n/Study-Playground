@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Contactformulier</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: black;
+            color: yellow;
+        }
+        input, textarea {
+            width: 400px;
+            border-radius: 4px;
+        }
+        input[type="radio"] {
+            width: initial;
+        }
+        textarea {
+            height: 200px;
+            background-color: aquamarine;
+        }
+        input[type="submit"]:active {
+            color: red;
+            background-color: yellow;
+        }
+        fieldset {
+            width: fit-content;
+            border-radius: 4px;
+            background-color: slategray;
+        }
+        #radiocel {
+        }
+        .input {
+            font-family: inherit;
+            border: 1px solid;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend><strong>Contactformulier</strong></legend>
+            <table>
+                <caption></caption>
+                <thead></thead>
+                <tbody>
+                    <tr>
+                        <td><label for="voornaam">Voornaam:</label></td>
+                        <td><input type="text" id="voornaam" name="voornaam" placeholder="Uw voornaam" required class="input"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="achternaam">Achternaam:</label></td>
+                        <td><input type="text" name="achternaam" id="achternaam" placeholder="Uw achternaam" required class="input"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="adres">Adres:</label></td>
+                        <td><input type="text" name="adres" id="adres" placeholder="Uw adres" required class="input"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="postcode">Postcode:</label></td>
+                        <td><input type="text" name="postcode" id="postcode" placeholder="1234 AB" required class="input"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="woonplaats">Woonplaats:</label></td>
+                        <td><input type="text" name="woonplaats" id="woonplaats" placeholder="Uw Woonplaats" required class="input"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">E-mail:</label></td>
+                        <td><input type="email" name="email" id="email" placeholder="Uw e-mail adres" required class="input"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="bericht">Bericht:</label></td>
+                        <td><textarea name="bericht" id="bericht" class="input"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><label for="spam">Veiligheidsvraag:</label></td>
+                        <td><label for="veiligheidsvraag">Wat is de uitkomst van vijf plus drie?</label></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td id="radiocel">
+                            <input type="radio" name="spam" id="spam">
+                            <label for="spam">91</label>
+                            <br><input type="radio" name="legit" id="legit">
+                            <label for="legit">8</label>
+                            <br><input type="radio" name="spam" id="spam">
+                            <label for="spam">6</label>
+                            <br><input type="radio" name="spam" id="spam">
+                            <label for="spam">1</label>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot></tfoot>
+            </table>
+        </fieldset>
+        <br><input type="submit" value="vezend">
+    </form>
+</body>
+</html>
