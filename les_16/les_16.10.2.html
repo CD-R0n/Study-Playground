@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: aquamarine;
+        }
+        div {
+            height: 150px;
+        }
+        img {
+            border: solid 2px white;
+            margin: 5px;
+        }
+        #figure1 {
+            display: block;
+            width: 200px;
+            float: left;
+        }
+        #figure1:hover {
+            filter: opacity(50%) saturate(0%)
+        }
+        #figure2 {
+            display: block;
+            width: 200px;
+            float: left;
+            filter: none;
+        }
+        #figure3 {
+            display: block;
+            width: 200px;
+            float: right;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <article>
+        <div>            
+            <img src="molen.jpeg" alt="molen" id="figure1">
+            <p>tekst</p>
+        </div>
+        <div>
+            <img src="molen.jpeg" alt="molen" id="figure2">
+            <p>tekst</p>    
+        </div>
+        <div>
+            <img src="molen.jpeg" alt="molen" id="figure3">
+            <p>tekst</p>
+        </div>
+    </article>
+</body>
+</html>
