@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 250px;
+            height: 250px;
+            position: relative;
+        }
+        #div1 {
+            background-color: blue;
+            animation-name: a1;
+            animation-duration: 5s;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease;
+        }
+        #div2 {
+            background-color: red;
+            animation-name: a1;
+            animation-duration: 5s;
+            animation-fill-mode: forwards;
+            animation-timing-function: linear;
+        }
+        #div3 {
+            background-color: green;
+            animation-name: a1;
+            animation-duration: 5s;
+            animation-fill-mode: forwards;
+            animation-timing-function: initial;
+        }
+        @keyframes a1 {
+            0% {
+                left: 0px;
+            }
+            25% {
+                left: 100px;
+            }
+            50% {
+                left: 200px;
+            }
+            100% {
+                left: 400px;
+                background-color: yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+</body>
+</html>

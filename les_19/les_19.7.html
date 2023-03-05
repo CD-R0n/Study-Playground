@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+width: 80px;
+height: 40px;
+background-color: pink;
+border-radius: 15px;
+position: relative;
+animation: beweging 8s infinite;
+}
+#div1 {animation-timing-function: ease;}
+#div2 {animation-timing-function: linear;}
+#div3 {animation-timing-function: ease-out;}
+#div4 {animation-timing-function: ease-in;}
+#div5 {animation-timing-function: ease-in-out;}
+@keyframes beweging {
+0% {left: 0px;}
+100% {left: 500px;}
+}
+</style>
+</head>
+<body>
+<div id="div1">1</div>
+<div id="div2">2</div>
+<div id="div3">3</div>
+<div id="div4">4</div>
+<div id="div5">5</div>
+</body>
+</html>
