@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function run() {
+            var naam = document.getElementById("naam").value;
+            var boek = document.getElementById("boek").value;
+            var film = document.getElementById("film").value;
+            window.alert("Ik ben " + naam + " en mijn favoriete boek is " + boek + " en mijn favoriete film is " + film + ".")
+        }
+    </script>
+</head>
+<body>
+    <form action="#">
+        <label for="naam">Uw naam:</label>
+        <input type="text" name="naam" id="naam" required>
+        <label for="boek">Uw favoriete boek:</label>
+        <input type="text" name="boek" id="boek">
+        <label for="film">Uw favoriete film:</label>
+        <input type="text" name="film" id="film">
+        <input type="button" onclick="run()" value="run">
+    </form>
+    <noscript>Om deze website optimaal te gebruiken is het noodzakelijk om JavaScript te activeren.</noscript>
+</body>
+</html>

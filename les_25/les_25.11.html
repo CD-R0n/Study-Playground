@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-3.1.0.min.js">
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+    $("#verberg").click(function() {
+    $("p").hide();
+    });
+    $("#toon").click(function() {
+    $("p").show();
+    });
+    });
+    </script>
+</head>
+<body>
+    <button id="verberg">Verberg</button>
+<button id="toon">Toon</button>
+<p>Met de knoppen kunt u deze tekst tonen en verbergen.</p>
+<noscript>
+Om deze website optimaal te gebruiken is het noodzakelijk om JavaScript te activeren.
+</noscript>
+</body>
+</html>
