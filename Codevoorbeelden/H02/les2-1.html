@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les2-1</title>
+</head>
+<body>
+    <div id="welkom"></div>
+    <div id="uw_leeftijd"></div>
+    
+    <script>
+        const naam = prompt("Wat is uw naam?", "Naam");
+        const jaarString = prompt("Wat is uw geboortejaar?", "19xx");
+        const jaar = parseInt(jaarString);
+        document.getElementById("welkom").innerHTML = "Welkom " + naam + " uit " + jaar + ".";
+        const leeftijd = 2023 - jaar;
+        const leeftijdZin = "Uw leeftijd is: " + leeftijd + "."; 
+        document.getElementById("uw_leeftijd").innerHTML = leeftijdZin;
+        const lengteZin = leeftijdZin.length;
+        console.log("De tweede zin heeft een lengte van: " + lengteZin);
+        console.log("De eerste \"n\" bevindt zich op positie: " + leeftijdZin.indexOf("n"));
+        const _1980 = jaar === 1980;
+        console.log("Is jaar 1980? " + _1980);
+    </script>
+</body>
+</html>

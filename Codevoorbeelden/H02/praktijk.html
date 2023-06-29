@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="strings"></div>
+    <div id="userstring"></div>
+    <script>
+        let aString = "ahoy";
+        let bString = "bhoy";
+        let cString = "choy";
+        let dString = aString+" "+bString+" "+cString;
+        console.log(dString) ;
+        console.log(dString.charAt(0))
+        console.log(dString.charAt(5))
+        console.log(dString.charAt(10))
+        console.log(dString.length)
+        console.log(dString.indexOf(" "))
+        document.getElementById("strings").innerHTML = aString + bString + cString;
+        let eString = prompt("voer een string in", "string");
+        document.getElementById("userstring").innerHTML = eString + eString.indexOf(" ");
+    </script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+document.getElementById('versie').innerHTML = navigator.appVersion;

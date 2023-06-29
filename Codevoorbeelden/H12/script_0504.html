@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<style>
+		#divResult {
+			border: 1px solid #999;
+			background-color: #ffc;
+			padding: 4px;
+			width: 200px;
+			height: 200px;
+		}
+	</style>
+	<title>jQuery ajax : $.ajax()</title>	
+</head>
+
+<body>
+	<!-- HTML -->
+	<h2>De jQuery .ajax()-functie</h2>
+	<button id="btnLoad">Haal pagina</button>
+	<div id="divResult">Hier komt de pagina</div>
+
+	<!-- JavaScript -->
+	<script src="../scripts/jquery-1.11.1.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			// De pagina 'h05_load.html' ophalen via $.ajax
+			$('#btnLoad').on('click', function () {
+				var urlPagina = 'h05_load.html';
+				$.ajax({
+					url: urlPagina,
+					success: function (data) {
+						$('#divResult').append(data);
+					},
+					error: function () {
+						$('#divResult').html('FOUT: Er is iets fout gegaan!');
+					}
+				});
+			});
+		});
+
+	</script>
+</body>
+</html>
+
+

@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<style>
+		#divResult {
+			border: 1px solid #999;
+			background-color: #ffc;
+			padding: 4px;
+			width: 200px;
+			height: 200px;
+		}
+	</style>
+	<title>jQuery animation: easing plugin</title>	
+</head>
+
+<body>
+	<!-- HTML -->
+	<button id="btnAnimate">easeOutBounce</button>
+	<button id="btnReset">Reset</button>
+	<div id="divResult">Animatie: easing-plugin</div>
+
+
+
+	<!-- JavaScript  -->
+	<script src="../scripts/jquery-1.11.1.min.js"></script>
+	<script src="../scripts/jquery.easing.1.3.js"></script>
+	<script>
+		$(document).ready(function () {
+			// custom functie .animate() met callback
+			var animationOptions = {
+				'height': '600px',				
+			};
+			var $result = $('#divResult'); // caching van jQuery-object in variabele
+
+
+			// Animatie via Easings.net
+			$('#btnAnimate').on('click', function () {				
+				$result.animate(animationOptions, 600, 'easeOutBounce'); // vervang deze naam door de gewenste easing-functie				
+			});
+
+			
+			// Reset
+			$('#btnReset').on('click', function () {
+				$result.removeAttr('style'); // reset				
+			});
+		});
+
+	</script>
+
+</body>
+</html>
+
+
