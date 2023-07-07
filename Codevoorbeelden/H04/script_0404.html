@@ -10,12 +10,12 @@
 	<div id="divResult"></div>
 
 	<script>
-		let teller = 1; // we kunnen hier geen const gebruiken, omdat de waarde van teller wordt aangepast.
+		let teller = 10; // we kunnen hier geen const gebruiken, omdat de waarde van teller wordt aangepast.
 		const getal = 10;
 
-		while (teller <= 10) {
+		while (teller >= 0) {
 			document.getElementById('divResult').innerHTML += teller + ' maal ' + getal + ' = ' + teller * getal + '<br />';
-			teller++;
+			teller--;
 		}
 	</script>
 </body>

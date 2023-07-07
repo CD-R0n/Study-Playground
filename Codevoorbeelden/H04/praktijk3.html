@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="divResult"></div>
+    <script>
+        let teller = 0;
+            for(let index in window.document) {
+                document.getElementById("divResult").innerHTML += 
+                    index + "=" + window.document[index] + "<br>"
+                    teller++
+                    if(teller >= 10) {
+                        break
+                    }
+            }
+    </script>
+</body>
+</html>

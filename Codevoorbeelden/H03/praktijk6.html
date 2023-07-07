@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Getallen vergelijken</h1>
+    <div id="invoer"></div>
+    <hr>
+    <div id="groter"></div>
+    <div id="kleiner"></div>
+    <div id="gelijk"></div>
+    <script>
+        const getal1 = prompt("1e getal");
+        const getal2 = prompt("2e getal");
+        const getal1Int = parseInt(getal1);
+        const getal2Int = parseInt(getal2);
+        document.getElementById('invoer').innerHTML = 'De getallen die u invoerde waren ' + getal1Int + ' en ' + getal2Int;
+        document.getElementById('groter').innerHTML = 'Is het eerste getal groter dan het tweede getal? ' + getal1Int > getal2Int ? "ja" : "nee";
+    </script>
+</body>
+</html>

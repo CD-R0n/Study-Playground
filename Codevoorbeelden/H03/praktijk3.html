@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = 10 + 15;
+        console.log(a);
+        a = "10" + "15";
+        console.log(a);
+        a = (10 > 15); // false
+        console.log(a);
+        a = (10 == 15);
+        console.log(a);
+        a = (10 >= 15) ? 10 : 15; //15
+        console.log(a);
+        a = (15 > 15) && (10 < 15); // false
+        console.log(a);
+        a = 10 - "15"; // -5
+        console.log(a);
+        a = (15 === 14) || (15 <= 15); //true
+        console.log(a);
+        a = ((10 > 15) && (15 > 10)) ? 15 : (10 < 15); // true
+        console.log(a);
+        a = "10" === "15"; // false
+        console.log(a);
+        a = "10" === "10"; //true
+        console.log(a);
+        a = "Hello" > "World"; // NaN
+        console.log(a);
+    </script>
+</body>
+</html>

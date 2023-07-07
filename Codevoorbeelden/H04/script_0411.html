@@ -13,9 +13,9 @@
 
 		// loop over alle eigenschappen van
 		// het ingebouwde object navigator
-		for (const i in navigator) {
+		for (const i in window.document) {
 			document.getElementById('divResult').innerHTML +=
-				i + ': ' + navigator[i] + '<br />';
+				i + ': ' + window.document[i] + '<br />';
 		}
 	</script>
 </body>
