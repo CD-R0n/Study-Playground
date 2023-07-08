@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function prijs(prijs) {
+            return 1300;
+        }
+        function Auto(merk, model, deuren, bouwjaar, prijs) {
+            this.merk = merk;
+            this.model = model;
+            this.deuren = deuren;
+            this.bouwjaar = bouwjaar;
+            this.prijs = prijs;
+        }
+        const mijnNieuweAuto = new Auto("Mercedes", "500SL", 5, 2014);
+        alert(mijnNieuweAuto.merk);
+        alert(mijnNieuweAuto.model);
+        alert(mijnNieuweAuto["deuren"]);
+        alert(mijnNieuweAuto["bouwjaar"]);
+        for (let eigenschap in mijnNieuweAuto) {
+            alert(mijnNieuweAuto[eigenschap]);
+        }
+    </script>
+</body>
+</html>
