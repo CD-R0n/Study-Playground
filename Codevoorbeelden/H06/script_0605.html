@@ -16,6 +16,10 @@
                 naam = document.getElementById('txtNaam').value;
                 divResult.innerHTML = '<h2>Welkom ' + naam + '</h2>';
             });
+            document.getElementById("txtNaam").addEventListener('blur', function () {
+                naam = document.getElementById('txtNaam').value;
+                divResult.innerHTML = '<h2>Welkom ' + naam + '</h2>';
+            })
         }) // einde load
 
     </script>

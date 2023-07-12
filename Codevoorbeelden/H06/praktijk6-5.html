@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = () => {
+            const foto = document.getElementById("foto");
+            foto.onclick = () => {
+                document.getElementById("src").innerHTML = foto.attributes["src"].value;
+            }
+            foto.onmouseover = () => foto.attributes["src"].value = "puppy_01.jpg";
+        }
+    </script>
+</head>
+<body>
+    <img src="kitten_01.jpg" alt="kitten" id="foto">
+    <div id="src"></div>
+</body>
+</html>

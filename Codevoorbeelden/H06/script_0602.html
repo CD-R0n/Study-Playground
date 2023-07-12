@@ -15,17 +15,20 @@
             // caching van HTML-elementen in variabelen
 			const divResult = document.getElementById('divResult');
 			const box = document.getElementById('divBox');
+            alert(typeof(box));
 
 			// event handler om mouseover af te vangen
             box.onmouseover = function () {
                 divResult.innerHTML += 'De muis is nu in de Box <br />';
                 // box.style.backgroundColor = '#FFC'; // Oefening in het boek: de achtergrondkleur aanpassen
+                box.style.backgroundColor = "#FFC"
             };
 
             // event handler om mouseout af te vangen
             box.onmouseout = function () {
                 divResult.innerHTML += 'Tot ziens! De muis heeft de Box verlaten <br />';
                 // box.style.backgroundColor = '#FFF'; // achtergrondkleur herstellen
+                box.style.backgroundColor = "#FFF"
             };
         }) // einde window.onload
 

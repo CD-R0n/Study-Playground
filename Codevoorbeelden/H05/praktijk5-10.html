@@ -17,11 +17,12 @@
             this.bouwjaar = bouwjaar;
             this.prijs = prijs;
         }
-        const mijnNieuweAuto = new Auto("Mercedes", "500SL", 5, 2014);
+        const mijnNieuweAuto = new Auto("Mercedes", "500SL", 5, 2014, prijs());
         alert(mijnNieuweAuto.merk);
         alert(mijnNieuweAuto.model);
         alert(mijnNieuweAuto["deuren"]);
         alert(mijnNieuweAuto["bouwjaar"]);
+        alert(mijnNieuweAuto.prijs);
         for (let eigenschap in mijnNieuweAuto) {
             alert(mijnNieuweAuto[eigenschap]);
         }
