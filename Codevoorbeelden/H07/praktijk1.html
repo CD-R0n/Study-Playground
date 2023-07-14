@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = () => {
+            document.getElementById("button").onclick = () => {
+                const Element = document.createElement("p");
+                const node = document.createTextNode(document.getElementById("text").value)
+                Element.appendChild(node);
+                document.getElementById("divResult").appendChild(Element);
+            }
+            document.getElementById("verwijder").onclick = () => {
+                document.getElementById("divResult").removeChild(document.querySelector("p:last-child"))
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="text">
+    <button id="button">Voeg toe</button>
+    <button id="verwijder">Verwijder</button>
+    <div id="divResult"></div>
+</body>
+</html>

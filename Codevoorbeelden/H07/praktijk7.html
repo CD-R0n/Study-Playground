@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = () => {
+            let index = 0;
+            function verwijder(e) {
+                document.querySelector("body").removeChild(e.target.parentElement);
+            }
+            document.getElementById("voegToe").onclick = () => {
+                const nieuwDiv = document.createElement("div");
+                nieuwDiv.id = "div" + index;               
+                const item = document.createTextNode(document.getElementById("lijstItem").value);
+                nieuwDiv.appendChild(item);
+                nieuwDiv.innerHTML += " <a href='#0'>verwijder</a>";
+                document.body.appendChild(nieuwDiv);
+                document.getElementById("div" + index).querySelector("a").onclick = (MouseEvent) => {
+                    verwijder(MouseEvent);
+                }
+                index++;
+            }    
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="lijstItem">
+    <button id="voegToe">Voeg toe</button>
+</body>
+</html>

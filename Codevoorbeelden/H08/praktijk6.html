@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../script/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#div1").css("background-color", "red");
+            $("#div2").css("background-color", "green");
+            $("#div3").css("background-color", "blue");
+            console.log(document.querySelectorAll("div"));
+            console.log(typeof $("div"));
+        })
+    </script>
+</head>
+<body>
+    <div id="div1">data</div>
+    <div id="div2">data</div>
+    <div id="div3">data</div>
+</body>
+</html>

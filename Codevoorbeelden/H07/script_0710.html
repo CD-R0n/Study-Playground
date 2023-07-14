@@ -12,7 +12,8 @@
                 console.log(alinea + ' wordt verwijderd...');
 
                 // 2. Verwijder de alinea
-                divResult.removeChild(alinea);
+                const node = document.createTextNode(document.getElementById("tekst").value);
+                divResult.replaceChild(node, alinea);
                 console.log('verwijderd!');
             })
         })
@@ -21,8 +22,8 @@
 
 <body>
 <h2>.removeChild()</h2>
-<p>Verwijder de alinea's van beneden naar boven</p>
-<button id="btnKnop1">Verwijder</button>
+<input type="text" id="tekst">
+<button id="btnKnop1">Vervang</button>
 <div id="divResult">
     <p>Alinea 1</p>
     <p>Alinea 2</p>

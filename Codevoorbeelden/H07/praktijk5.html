@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = () => {
+            document.getElementById("knop").onclick = () => {
+                let tekst = document.getElementById("invoer").value;
+                let special = document.querySelectorAll(".special");
+                for(let i = 0; i < special.length; i++) {
+                    special[i].innerHTML = tekst;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="invoer">
+    <button id="knop">klik mij</button>
+    <p>alinea 1</p>
+    <p class="special">alinea special</p>
+    <p>alinea 3</p>
+    <p class="special">alinea special</p>
+</body>
+</html>

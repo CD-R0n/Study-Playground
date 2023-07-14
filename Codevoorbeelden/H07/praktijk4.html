@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = () => {
+            let index = 1;
+            document.getElementById("knopKop").onclick = () => {
+                const kop = document.createElement("h" + index);
+                const tekst = document.createTextNode(document.getElementById("tekst").value);
+                kop.appendChild(tekst);
+                document.querySelector("body").insertBefore(kop, document.getElementById("tekst"))
+                index++;
+                if (index === 7) {
+                    index = 1;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="tekst">
+    <button id="knopKop">Maak Kop</button>
+</body>
+</html>

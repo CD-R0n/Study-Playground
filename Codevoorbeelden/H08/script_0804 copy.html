@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script 
+        src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            console.log($("p").length);
+            console.log($("tr:odd").length);
+            console.log($("body").children());
+            console.log($(document).children());
+            console.log($("td").length);
+            console.log($("p, div"));
+            console.log($("#myTable"));
+            console.log($(".para"));
+        })
+    </script>
+</head>
+<body>
+    <h2>jQuery basisvoorbeelden</h2>
+<p class="para">De eerste paragraaf.</p>
+<p>Nog een paragraaf.</p>
+<div>Tekst in een div.</div>
+<p>Een derde paragraaf.</p>
+<table id="myTable" border="1">
+    <tr>
+        <td>cel 1</td>
+        <td>cel 2</td>
+        <td>cel 3</td>
+    </tr>
+    <tr>
+        <td>cel 4</td>
+        <td>cel 5</td>
+        <td>cel 6</td>
+    </tr>
+    <tr>
+        <td>cel 7</td>
+        <td>cel 8</td>
+        <td>cel 9</td>
+    </tr>
+    <tr>
+        <td>cel 10</td>
+        <td>cel 11</td>
+        <td>cel 12</td>
+    </tr>
+</table>
+<p class="para">Kijk ook in de Developer Console.</p>
+</body>
+</html>
