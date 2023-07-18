@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../script/jquery-3.7.0.js"></script>
+    <script>
+        $(() => {
+            $("#btn").on("click", () => {
+                if ($("#radioTekst").is(":checked")) {
+                    let tekst = $("div").text();
+                    tekst = tekst + $("input[type='text']").val();
+                    $("div").text(tekst);
+                }
+                if ($("#radioAchtergrond").is(":checked")) {
+                    $("div").css("background-color", $("input[type='text']").val());
+                }
+                if ($("#radioVoorgrond").is(":checked")) {
+                    $("div").css("color", $("input[type='text']").val());
+                }
+                if ($("#radioHoogte").is(":checked")) {
+                    $("div").height($("input[type='text']").val());
+                }
+                if ($("#radioBreedte").is(":checked")) {
+                    $("div").width($("input[type='text']").val());
+                }
+            });
+            $("#btnLeeg").on("click", () => {
+                $("div").empty();
+            });
+            $("div").on("click", () => {
+                $("div").empty();
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="radio" value="tekst" name="selector" id="radioTekst">
+    <label for="knopTekst">tekst</label>
+    <input type="radio" value="achtergrond" name="selector" id="radioAchtergrond">
+    <label for="radioAchtergrond">achtergrond</label>
+    <input type="radio" value="voorgrond" name="selector" id="radioVoorgrond">
+    <label for="radioVoorgrond">voorgrond</label>
+    <input type="radio" value="hoogte" name="selector" id="radioHoogte">
+    <label for="radioHoogte">hoogte</label>
+    <input type="radio" value="breedte" name="selector" id="radioBreedte">
+    <label for="radioBreedte">breedte</label>
+    <br>
+    <input type="text" placeholder="achtergrond">
+    <button id="btn">klik mij</button>
+    <div>voorbeeld tekst</div>
+    <button id="btnLeeg">leeg</button>
+</body>
+</html>
