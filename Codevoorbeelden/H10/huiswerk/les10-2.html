@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les 10-2</title>
+    <script src="jquery-3.7.0.js"></script>
+    <script src="script10-2.js"></script>
+    <style>
+        p {
+            overflow: hidden;
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+<body>
+    <button id="btnFinish">finish</button>
+    <button id="btnStop">stop</button>
+    <button id="btnQueue">queue</button>
+    <button id="btnDequeue">dequeue</button>
+    <br>
+    <div></div>
+    <p>
+        Deze pagina is gemaakt om te experimenteren met een aantal animatie-functies van jQuery.<br>
+        De automatisch startende animatie werkt een beetje "janky" met de queue/dequeue knoppen.<br>
+        Maar voor de rest heb ik hier veel van kunnen leren.<br>
+        <br>
+        Als er meerdere animaties in jQuery aan een element worden gekoppeld komen ze in een wachtrij(queue) te staan en worden ze na elkaar uitgevoerd.<br>
+        <br>
+        De finish-functie stopt de animatie en haalt de wachtrij leeg en zorgt ervoor dat het eindresultaat van alle animaties direct bereikt wordt.<br>
+        <br>
+        De stop-functie stopt de huidige animatie op zijn plek en werkt de verdere wachtrij af.<br>
+        Extra parameters kunnen toegevoegd worden om eventueel naar het eindresultaat te gaan of de wachtrij te legen.<br>
+        <br>
+        De queue-functie kan opdrachten aan de wachtrij toevoegen of uitlezen.<br>
+        Om animaties in de wachtrij te zetten hoeft de queue-functie niet gebruikt te worden, dit gebeurt automatisch.<br>
+        <br>
+        De dequeue-functie zorgt ervoor dat de volgende opdracht/animatie meteen wordt uitgevoerd.
+    </p>
+</body>
+</html>

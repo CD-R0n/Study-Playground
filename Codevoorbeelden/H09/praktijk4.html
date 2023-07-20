@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main {
+            height: 500px;
+        }
+        .thumb {
+            width: 50px;
+        }
+    </style>
+    <script src="../script/jquery-3.4.1.min.js"></script>
+    <script>
+        $(()=>{
+            $(".thumb").on("click", function () {
+                const source = $(this).attr("src");
+                const title = $(this).attr("title");
+                $("#main").fadeOut("slow", ()=>{
+                    $("#main").attr("src", source);
+                    $("#main").fadeIn("slow");
+                    $("#beschrijving").text(title);
+                });                
+            })
+        })
+    </script>
+</head>
+<body>
+    <img src="../img/kitten1.jpg" alt="" id="main">
+    <br>
+    <div id="beschrijving">poes1</div>
+    <br>
+    <img src="../img/kitten1.jpg" alt="" class="thumb" title="poes1">
+    <img src="../img/kitten2.jpg" alt="" class="thumb" title="poes2">
+    <img src="../img/kitten3.jpg" alt="" class="thumb" title="poes3">
+    <img src="../img/puppy1.jpg" alt="" class="thumb" title="hond1">
+    <img src="../img/puppy2.jpg" alt="" class="thumb" title="hond2">
+    <img src="../img/puppy3.jpg" alt="" class="thumb" title="hond3">
+</body>
+</html>

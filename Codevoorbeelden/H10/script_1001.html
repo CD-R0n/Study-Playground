@@ -17,12 +17,12 @@
 		$(document).ready(function () {
 			// divResult verbergen na klik op knop
 			$('#btnHide').on('click', function () {
-				$('#divResult').hide();
+				$('#divResult').hide("fast");
 			});
 
 			// divResult tonen na klik op knop
 			$('#btnShow').on('click', function () {
-				$('#divResult').show();
+				$('#divResult').show("slow");
 			});
 		});
 

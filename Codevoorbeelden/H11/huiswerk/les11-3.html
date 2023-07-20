@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les 11-3</title>
+    <style>
+        div {
+            display: none;
+            background-color: lightyellow;
+            position: absolute;
+        }
+    </style>
+    <script src="jquery-3.7.0.js"></script>
+    <script src="script11-3.js"></script>
+</head>
+<body>
+    <img src="kitten3.jpg" alt="kitten">
+    <p>
+        e.pageX en e.pageY geven de coördinaten van de positie ten opzichte van linksboven de hele webpagina.<br>
+        Dit is inclusief het deel dat niet zichtbaar is als er naar beneden gescrold is.<br>
+        <br>
+        e.clientX en e.clientY geven de coördinaten ten opzichte van linksboven het browserscherm.<br>
+        Deze coördinaten compenseren dus voor het scrollen.<br>
+        <br>
+        e.offsetX en e.offsetY geven de coördinaten ten opzichte van linksboven het element dat het event activeert.<br>
+    </p>
+    <div>Dummytekst</div>
+</body>
+</html>
