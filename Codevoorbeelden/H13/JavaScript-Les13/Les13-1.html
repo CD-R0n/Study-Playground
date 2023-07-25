@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les 13-1</title>
+    <link rel="stylesheet" href="jquery-ui-1.13.2/jquery-ui.css">
+    <style>
+        #sliderValue {
+            display: none;
+        }
+        table {
+            text-align: right;
+            border-collapse: collapse;
+        }
+        table td {
+            border: 1px solid;
+        }
+    </style>
+    <script src="jquery-ui-1.13.2/external/jquery/jquery.js"></script>
+    <script src="jquery-ui-1.13.2/jquery-ui.js"></script>
+    <script src="les13-1.js"></script>
+</head>
+<body>
+    <div id="slider"></div>
+    <br>
+    <table>
+        <tr>
+            <td id="sliderValue"></td>
+            <td id="tSubtotaal">&nbsp;</td>
+        </tr>
+        <tr>
+            <td>Verzendkosten (gratis vanaf 5 stuks):</td>
+            <td id="tVerzendkosten"></td>
+        </tr>
+        <tr>
+            <td>10% korting vanaf 80 stuks:</td>
+            <td id="tKorting"></td>
+        </tr>
+        <tr>
+            <td>Totaal:</td>
+            <td id="tTotaal"></td>
+        </tr>
+    </table>
+</body>
+</html>
